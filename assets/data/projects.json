@@ -1,0 +1,82 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Calculadora de GDU Web",
+      "description": "Ferramenta web para upload de planilhas Excel, limpeza automática de dados, cálculo de Graus-Dia de Desenvolvimento (GDU) e exportação de resultados em diferentes formatos.",
+      "problem": "Cálculos manuais de GDU levavam horas e estavam sujeitos a erros humanos.",
+      "solution": "Interface intuitiva com validação em tempo real e processamento automatizado.",
+      "impact": "Redução de 80% no tempo de processamento e eliminação de erros de cálculo.",
+      "image": "https://via.placeholder.com/640x360",
+      "technologies": ["Vue.js 3", "Excel.js", "Chart.js", "Node.js", "Tailwind CSS"],
+      "demoUrl": "#",
+      "githubUrl": "#",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Módulo de Quizzes Interativos",
+      "description": "Componente modular para implementação de quizzes interativos com feedback instantâneo, sistema de pontuação e persistência de progresso.",
+      "problem": "Baixo engajamento dos usuários em treinamentos online obrigatórios.",
+      "solution": "Experiência interativa com gamificação e interface responsiva.",
+      "impact": "Aumento de 45% na taxa de conclusão e melhoria na retenção de informação.",
+      "image": "https://via.placeholder.com/640x360",
+      "technologies": ["Vue 3", "Pinia", "Composition API", "Vite", "Jest"],
+      "demoUrl": "#",
+      "githubUrl": "#",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Dashboards Agrícolas",
+      "description": "Conjunto de painéis analíticos em Power BI para monitoramento de indicadores-chave de produção agrícola, com visualizações específicas por fase e rotação automática.",
+      "problem": "Dados dispersos em sistemas isolados dificultavam a tomada de decisão.",
+      "solution": "Centralização de dados com visualizações customizadas para diferentes públicos e níveis hierárquicos.",
+      "impact": "Redução de 35% no tempo de análise e identificação precoce de tendências negativas.",
+      "image": "https://via.placeholder.com/640x360",
+      "technologies": ["Power BI", "DAX", "Power Query", "SQL", "Excel Avançado"],
+      "demoUrl": "#",
+      "githubUrl": "#",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Sistema de Registro de Marcas",
+      "description": "Aplicação web para gerenciamento e acompanhamento do processo de registro de marcas, com alertas de prazos e geração automática de documentos.",
+      "problem": "Controle manual de prazos e documentos resultava em perdas de oportunidades.",
+      "solution": "Sistema integrado com validações automáticas e notificações de prazos críticos.",
+      "impact": "Redução de 40% no tempo de processamento e zero prazos perdidos após implementação.",
+      "image": "https://via.placeholder.com/640x360",
+      "technologies": ["Laravel", "MySQL", "Vue.js", "Docker", "PDF.js"],
+      "demoUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "API de Integração de Dados Meteorológicos",
+      "description": "Serviço RESTful para coleta, normalização e disponibilização de dados meteorológicos de múltiplas fontes para aplicações agrícolas.",
+      "problem": "Fontes heterogêneas de dados meteorológicos dificultavam análises consistentes.",
+      "solution": "API centralizada com tratamento de dados e cache inteligente para reduzir requisições externas.",
+      "impact": "Economia de R$ 15.000/ano em serviços pagos e melhoria na qualidade dos dados utilizados.",
+      "image": "https://via.placeholder.com/640x360",
+      "technologies": ["Node.js", "Express", "MongoDB", "Redis", "JWT"],
+      "demoUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Automação de Fluxos Documentais",
+      "description": "Solução para automação de fluxos de aprovação de documentos com integração entre sistemas corporativos e assinatura digital.",
+      "problem": "Processos manuais de aprovação geravam gargalos e dificuldades de rastreamento.",
+      "solution": "Fluxo automatizado com níveis de aprovação, notificações e registro completo de atividades.",
+      "impact": "Ciclo de aprovação reduzido de 5 dias para menos de 24 horas.",
+      "image": "https://via.placeholder.com/640x360",
+      "technologies": ["Power Automate", "SharePoint", "Power Apps", "Azure Functions"],
+      "demoUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+/* Estilos customizados para o portfólio - Tema Medieval RPG */
+
+/* Animações medievais */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes drift {
+  from { transform: translateX(-100px); }
+  to { transform: translateX(calc(100vw + 100px)); }
+}
+
+@keyframes mysticalGlow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -100% 0; }
+  100% { background-position: 100% 0; }
+}
+
+/* Classes de animação */
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease forwards;
+}
+
+.animation-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+/* Efeitos de brilho medieval */
+.shadow-glow-light {
+  box-shadow: 0 0 10px rgba(75, 96, 67, 0.4), 0 0 20px rgba(75, 96, 67, 0.2);
+}
+
+.shadow-glow-gold {
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.4), 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+/* Estilos para navegação - Tema Medieval */
+.nav-link {
+  position: relative;
+  color: rgba(75, 96, 67, 0.9);
+  transition: color 0.3s;
+  padding-bottom: 2px;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+}
+
+.dark .nav-link {
+  color: rgba(180, 180, 180, 1);
+}
+
+.nav-link:hover, 
+.nav-link.active {
+  color: #4b6043; /* Verde musgo */
+}
+
+.dark .nav-link:hover, 
+.dark .nav-link.active {
+  color: #d4af37; /* Dourado */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: #4b6043;
+  transition: width 0.3s;
+}
+
+.dark .nav-link::after {
+  background-color: #d4af37;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  color: #d4af37;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: #d4af37;
+  transform: translateX(5px);
+}
+
+.mobile-nav-link::before {
+  content: '❧';
+  position: absolute;
+  left: -10px;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.mobile-nav-link:hover::before,
+.mobile-nav-link.active::before {
+  opacity: 1;
+  transform: translateX(10px);
+}
+
+/* Fundo medieval elaborado com elementos animados */
+body {
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(75, 96, 67, 0.05) 0%, transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.03) 0%, transparent 25%),
+    radial-gradient(circle at 40% 40%, rgba(26, 26, 26, 0.8) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(40, 40, 40, 0.9) 100%);
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Fundo texturizado com padrão medieval */
+.texture-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M30 0l30 30-30 30L0 30z' fill='%23d4af37' fill-opacity='0.02'/%3E%3Cpath d='M30 15l15 15-15 15-15-15z' fill='%234b6043' fill-opacity='0.03'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Elementos flutuantes de fundo */
+.floating-elements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.floating-element {
+  position: absolute;
+  opacity: 0.1;
+  animation: drift 60s linear infinite;
+}
+
+.floating-element:nth-child(1) {
+  top: 10%;
+  font-size: 2rem;
+  animation-delay: 0s;
+  color: #d4af37;
+}
+
+.floating-element:nth-child(2) {
+  top: 30%;
+  font-size: 1.5rem;
+  animation-delay: -20s;
+  color: #4b6043;
+}
+
+.floating-element:nth-child(3) {
+  top: 60%;
+  font-size: 1.8rem;
+  animation-delay: -40s;
+  color: #d4af37;
+}
+
+.floating-element:nth-child(4) {
+  top: 80%;
+  font-size: 1.2rem;
+  animation-delay: -10s;
+  color: #4b6043;
+}
+
+/* Fundo especial para a seção hero */
+#medieval-bg {
+  background: 
+    radial-gradient(circle at 30% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 70% 80%, rgba(75, 96, 67, 0.06) 0%, transparent 35%),
+    linear-gradient(135deg, rgba(26, 26, 26, 0.98) 0%, rgba(20, 20, 20, 0.95) 100%),
+    url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234b6043' fill-opacity='0.03'%3E%3Cpath d='M20 0l20 20-20 20L0 20z'/%3E%3C/g%3E%3C/svg%3E");
+  position: relative;
+}
+
+/* Partículas místicas no fundo */
+#medieval-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, rgba(212, 175, 55, 0.2), transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(212, 175, 55, 0.15), transparent),
+    radial-gradient(1px 1px at 90px 40px, rgba(75, 96, 67, 0.2), transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(75, 96, 67, 0.15), transparent);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: mysticalGlow 8s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+/* Cards de estilo medieval melhorados */
+.medieval-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(250, 250, 250, 0.85) 100%);
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.1), 
+    0 1px 3px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(75, 96, 67, 0.1);
+  overflow: hidden;
+}
+
+.medieval-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+  transition: left 0.5s;
+  z-index: 0;
+}
+
+.medieval-card:hover::before {
+  left: 100%;
+}
+
+.medieval-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.15), 
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 0 15px rgba(212, 175, 55, 0.2);
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.dark .medieval-card {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(30, 30, 30, 0.85) 100%);
+  border-color: rgba(212, 175, 55, 0.2);
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.3), 
+    0 1px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(212, 175, 55, 0.1);
+}
+
+.dark .medieval-card:hover {
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.4), 
+    0 5px 10px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Efeito de bordas decorativas */
+.medieval-card::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 1px solid rgba(75, 96, 67, 0.1);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.dark .medieval-card::after {
+  border-color: rgba(212, 175, 55, 0.15);
+}
+
+.medieval-card:hover::after {
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+/* Borda decorativa para imagens */
+.medieval-frame {
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.medieval-frame::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  z-index: -1;
+}
+
+/* Efeito de hover para botões */
+a:hover, button:hover {
+  transition: all 0.3s ease;
+}
+
+.dark a:hover, .dark button:hover {
+  color: #d4af37;
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+/* Ajustes gerais */
+html {
+  scroll-padding-top: 4rem; /* Para compensar o header fixo */
+  scroll-behavior: smooth;
+}
+
+main {
+  padding-top: 4rem; /* Para compensar o header fixo */
+}
+
+section {
+  scroll-margin-top: 4rem;
+}
+
+/* Estilos para formulário */
+input:focus, 
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(75, 96, 67, 0.5);
+}
+
+.dark input:focus, 
+.dark textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.3);
+}
+
+/* Customizações de acessibilidade */
+:focus {
+  outline: 2px solid rgba(75, 96, 67, 0.6);
+  outline-offset: 2px;
+}
+
+.dark :focus {
+  outline: 2px solid rgba(212, 175, 55, 0.4);
+  outline-offset: 2px;
+}
+
+/* Melhorias de contraste para acessibilidade */
+.dark .text-gray-400 {
+  color: rgba(200, 200, 180, 1);
+}
+
+/* Estilos específicos para o tema RPG */
+body {
+  font-feature-settings: "hist", "calt", "kern";
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
