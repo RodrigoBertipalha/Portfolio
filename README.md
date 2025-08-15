@@ -1,14 +1,14 @@
 # Portfólio Pessoal - Rodrigo Martins
 
-Este é um portfólio pessoal estático desenvolvido com HTML, CSS (Tailwind) e JavaScript vanilla.
+Este é um portfólio pessoal estático desenvolvido com HTML, CSS (Tailwind) e JavaScript vanilla, com tema medieval RPG.
 
 ## Características
 
+- Design temático medieval RPG com elementos visuais imersivos
 - Design responsivo e acessível
 - Tema escuro por padrão com opção de alternar para tema claro
-- Animações suaves e efeitos visuais leves
+- Animações e partículas interativas no background
 - Carregamento dinâmico de projetos a partir de JSON
-- Formulário de contato (demonstrativo)
 
 ## Estrutura do Projeto
 
