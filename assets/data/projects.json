@@ -9,7 +9,7 @@
       "impact": "Redução de 80% no tempo de processamento e eliminação de erros de cálculo.",
       "technologies": ["Vue.js 3", "Excel.js", "Chart.js", "Node.js", "Tailwind CSS"],
       "demoUrl": "#",
-      "githubUrl": "#",
+      "githubUrl": "https://github.com/RodrigoBertipalha/GDU-Calculator",
       "featured": true,
       "displayOrder": 1
     },
@@ -22,7 +22,7 @@
       "impact": "Redução de 35% no tempo de análise e identificação precoce de tendências negativas.",
       "technologies": ["Power BI", "DAX", "Power Query", "SQL", "Excel Avançado"],
       "demoUrl": "#",
-      "githubUrl": "#",
+      "githubUrl": "https://github.com/RodrigoBertipalha/PowerBI-Dashboards",
       "featured": true,
       "displayOrder": 2
     },
@@ -35,10 +35,23 @@
       "impact": "Democratização do acesso a ferramentas de gestão empresarial para pequenas empresas.",
       "technologies": ["React", "Node.js", "MongoDB", "Docker", "AWS"],
       "demoUrl": "#",
-      "githubUrl": "#",
+      "githubUrl": "https://github.com/RodrigoBertipalha/SAAS-Management",
       "featured": true,
       "displayOrder": 3,
       "collaboration": true
+    },
+    {
+      "id": 8,
+      "title": "Atv-Docker",
+      "description": "Projeto de conteinerização de aplicação web com Docker, incluindo múltiplos serviços e orquestração com Docker Compose.",
+      "problem": "Dificuldade em configurar ambientes de desenvolvimento consistentes e manter a paridade entre ambientes de desenvolvimento e produção.",
+      "solution": "Implementação de containers Docker para cada componente da aplicação, com configuração automatizada e orquestração via Docker Compose.",
+      "impact": "Redução do tempo de configuração de ambiente de desenvolvimento em 90% e eliminação de problemas de incompatibilidade entre ambientes.",
+      "technologies": ["Docker", "Docker Compose", "Node.js", "MySQL", "Nginx"],
+      "demoUrl": "#",
+      "githubUrl": "https://github.com/RodrigoBertipalha/Atv-Docker",
+      "featured": true,
+      "displayOrder": 4
     }
   ]
 }
