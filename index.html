@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Rodrigo Martins - Desenvolvedor de Sistemas | JavaScript">
+    <meta name="description" content="Portfólio de Rodrigo Bertipalha - Analista de Dados">
     
-    <title>Rodrigo Martins | Desenvolvedor de Sistemas | JavaScript</title>
+    <title>Rodrigo Bertipalha | Analista de Dados</title>
     
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,11 +25,20 @@
                         primary: '#4b6043', // Verde musgo
                         secondary: '#d4af37', // Dourado
                         dark: '#1a1a1a', // Cinza chumbo quase preto
+                        light: {
+                            bg: '#f7f9f3', // Um off-white com tom verde suave
+                            accent: '#e5eadf', // Tom verde bem claro para acentos
+                            pattern: '#f0f4e8', // Para padrões e texturas
+                            border: '#c4d1b5', // Para bordas mais visíveis no tema claro
+                        }
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                         cinzel: ['Cinzel', 'serif'],
                     },
+                    backgroundImage: {
+                        'paper-pattern': "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZjBmNGU4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNDB2NDBoLTQweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0wIDBoMXY0MGgtMXpNMzkgMGgxdjQwaC0xek0wIDBoNDB2MWgtNDB6TTAgMzloNDB2MWgtNDB6Ii8+PC9nPjwvc3ZnPg==')",
+                    }
                 },
             },
         }
@@ -38,7 +47,7 @@
     <!-- CSS customizado -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="bg-white dark:bg-dark text-gray-800 dark:text-gray-200 font-sans antialiased">
+<body class="bg-light-bg dark:bg-dark text-gray-800 dark:text-gray-200 font-sans antialiased bg-paper-pattern">
     <!-- Tema dark por padrão -->
     <script>
         // Define dark como padrão
@@ -59,7 +68,7 @@
     </div>
 
     <!-- Header fixo -->
-    <header class="fixed w-full top-0 z-40 bg-white/90 dark:bg-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-secondary/30">
+    <header class="fixed w-full top-0 z-40 bg-light-bg/90 dark:bg-dark/95 backdrop-blur-sm border-b border-light-border dark:border-secondary/30">
         <div class="container mx-auto px-4 sm:px-6 py-4">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
@@ -127,22 +136,22 @@
                 <div id="medieval-bg" class="w-full h-full bg-dark bg-opacity-90"></div>
             </div>
             <div class="container mx-auto px-4 sm:px-6 py-0 relative z-10 flex justify-center items-center h-screen">
-                <div class="max-w-3xl w-4/5 border border-secondary/20 p-12 rounded-md bg-dark/70 backdrop-blur-sm medieval-card text-center">
-                    <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-slideUp font-cinzel text-primary dark:text-secondary">Rodrigo Martins</h1>
-                    <h2 class="text-2xl md:text-4xl font-medium text-gray-600 dark:text-gray-300 mb-10 animate-slideUp animation-delay-100">
-                        Desenvolvedor de Sistemas | JavaScript
+                <div class="max-w-3xl w-11/12 sm:w-4/5 border border-secondary/20 p-6 sm:p-12 rounded-md bg-dark/70 backdrop-blur-sm medieval-card text-center">
+                    <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 animate-slideUp font-cinzel text-primary dark:text-secondary">Rodrigo Bertipalha</h1>
+                    <h2 class="text-xl sm:text-2xl md:text-4xl font-medium text-gray-600 dark:text-gray-300 mb-6 sm:mb-10 animate-slideUp animation-delay-100">
+                        Analista de Dados
                     </h2>
-                    <div class="flex flex-wrap gap-5 justify-center animate-fadeIn animation-delay-300">
+                    <div class="flex flex-wrap gap-3 sm:gap-5 justify-center animate-fadeIn animation-delay-300">
                         <a href="https://www.linkedin.com/in/rodrigobertipalha" target="_blank" rel="noopener noreferrer" 
-                           class="px-8 py-4 bg-primary dark:bg-transparent text-white dark:text-secondary border border-primary dark:border-secondary rounded-md hover:bg-primary/90 dark:hover:bg-secondary/10 transition flex items-center gap-3 hover:shadow-glow-light dark:hover:shadow-glow-gold text-xl">
+                           class="px-4 sm:px-8 py-3 sm:py-4 bg-primary dark:bg-transparent text-white dark:text-secondary border border-primary dark:border-secondary rounded-md hover:bg-primary/90 dark:hover:bg-secondary/10 transition flex items-center gap-2 sm:gap-3 hover:shadow-glow-light dark:hover:shadow-glow-gold text-base sm:text-xl">
                             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                             </svg>
                             LinkedIn
                         </a>
                         <a href="https://github.com/seuperfil" target="_blank" rel="noopener noreferrer" 
-                           class="px-8 py-4 border border-gray-300 dark:border-secondary/30 rounded-md hover:bg-gray-100 dark:hover:bg-secondary/10 dark:text-gray-200 transition flex items-center gap-3 hover:shadow-glow-light dark:hover:shadow-glow-gold text-xl">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                           class="px-4 sm:px-8 py-3 sm:py-4 border border-gray-300 dark:border-secondary/30 rounded-md hover:bg-gray-100 dark:hover:bg-secondary/10 dark:text-gray-200 transition flex items-center gap-2 sm:gap-3 hover:shadow-glow-light dark:hover:shadow-glow-gold text-base sm:text-xl">
+                            <svg class="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                             </svg>
                             GitHub
@@ -167,17 +176,17 @@
         </section>
 
         <!-- Seção Sobre Mim -->
-        <section id="sobre" class="py-12 bg-gray-50 dark:bg-dark">
+        <section id="sobre" class="py-12 bg-light-pattern dark:bg-dark">
             <div class="container mx-auto px-4 sm:px-6">
                 <h2 class="text-3xl font-bold mb-8 text-center font-cinzel text-primary dark:text-secondary">Sobre Mim</h2>
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div class="flex justify-center">
                         <div class="w-96 h-96 rounded-md overflow-hidden border border-primary dark:border-secondary medieval-frame">
                             <!-- Usando a imagem local com extensão correta -->
-                            <img src="./assets/img/profile.jpeg" alt="Rodrigo Martins" class="w-full h-full object-cover" loading="lazy">
+                            <img src="./assets/img/profile.jpeg" alt="Rodrigo Bertipalha" class="w-full h-full object-cover" loading="lazy">
                         </div>
                     </div>
-                    <div class="bg-white/5 dark:bg-dark/50 p-8 border border-gray-200 dark:border-secondary/20 rounded-md medieval-card">
+                    <div class="bg-light-card/90 dark:bg-dark/50 p-8 border border-light-border dark:border-secondary/20 rounded-md medieval-card">
                         <p class="mb-4 text-lg dark:text-gray-300">
                             Graduado em Direito e Licenciado em Pedagogia, pós-graduado em Tecnologias Digitais e Inovação na Educação e atualmente graduando em Ciência da Computação.
                         </p>
@@ -211,12 +220,12 @@
         </section>
 
         <!-- Seção Experiências -->
-        <section id="experiencias" class="py-20 bg-white dark:bg-dark/70">
+        <section id="experiencias" class="py-20 bg-light-bg dark:bg-dark/70">
             <div class="container mx-auto px-4 sm:px-6">
                 <h2 class="text-3xl font-bold mb-12 text-center font-cinzel text-primary dark:text-secondary">Experiências Profissionais</h2>
                 <div class="grid md:grid-cols-2 gap-8">
                     <!-- Experiência 1 - GDM Corporate Intern II -->
-                    <div class="bg-white dark:bg-dark rounded-md shadow-lg p-6 border border-gray-200 dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
+                    <div class="bg-light-card dark:bg-dark rounded-md shadow-lg p-6 border border-light-border dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-semibold font-cinzel text-primary dark:text-secondary">Data Analyst - Corporate Intern II</h3>
                             <span class="bg-primary/10 dark:bg-secondary/10 text-primary dark:text-secondary text-base font-medium py-1 px-3 rounded-md border border-primary/20 dark:border-secondary/20 font-cinzel">Junho 2025 - Presente</span>
@@ -228,15 +237,15 @@
                         <div>
                             <span class="text-sm font-medium text-gray-500 dark:text-gray-400">Tecnologias:</span>
                             <div class="flex flex-wrap gap-2 mt-2">
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">Power BI</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">Excel</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">SQL</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">Power BI</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">Excel</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">SQL</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Experiência 2 - Sião Privacy -->
-                    <div class="bg-white dark:bg-dark rounded-md shadow-lg p-6 border border-gray-200 dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
+                    <div class="bg-light-card dark:bg-dark rounded-md shadow-lg p-6 border border-light-border dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-semibold font-cinzel text-primary dark:text-secondary">Estagiário de Desenvolvimento Web</h3>
                             <span class="bg-primary/10 dark:bg-secondary/10 text-primary dark:text-secondary text-base font-medium py-1 px-3 rounded-md border border-primary/20 dark:border-secondary/20 font-cinzel">Fev. - Jun. 2025</span>
@@ -248,16 +257,16 @@
                         <div>
                             <span class="text-sm font-medium text-gray-500 dark:text-gray-400">Tecnologias:</span>
                             <div class="flex flex-wrap gap-2 mt-2">
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">JavaScript</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">Vue.js</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">Docker</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">MySQL</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">JavaScript</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">Vue.js</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">Docker</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">MySQL</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Experiência 3 - GDM Corporate Intern -->
-                    <div class="bg-white dark:bg-dark rounded-md shadow-lg p-6 border border-gray-200 dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
+                    <div class="bg-light-card dark:bg-dark rounded-md shadow-lg p-6 border border-light-border dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-semibold font-cinzel text-primary dark:text-secondary">Data Analyst - Corporate Intern</h3>
                             <span class="bg-primary/10 dark:bg-secondary/10 text-primary dark:text-secondary text-base font-medium py-1 px-3 rounded-md border border-primary/20 dark:border-secondary/20 font-cinzel">Out. 2024 - Abr. 2025</span>
@@ -269,16 +278,16 @@
                         <div>
                             <span class="text-sm font-medium text-gray-500 dark:text-gray-400">Tecnologias:</span>
                             <div class="flex flex-wrap gap-2 mt-2">
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">Power BI</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">Excel</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">Power Apps</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">Power Automate</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">Power BI</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">Excel</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">Power Apps</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">Power Automate</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Experiência 4 - Autônomo -->
-                    <div class="bg-white dark:bg-dark rounded-md shadow-lg p-6 border border-gray-200 dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
+                    <div class="bg-light-card dark:bg-dark rounded-md shadow-lg p-6 border border-light-border dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-semibold font-cinzel text-primary dark:text-secondary">Desenvolvedor Web</h3>
                             <span class="bg-primary/10 dark:bg-secondary/10 text-primary dark:text-secondary text-base font-medium py-1 px-3 rounded-md border border-primary/20 dark:border-secondary/20 font-cinzel">Mar. 2022 - Abr. 2025</span>
@@ -290,15 +299,15 @@
                         <div>
                             <span class="text-sm font-medium text-gray-500 dark:text-gray-400">Tecnologias:</span>
                             <div class="flex flex-wrap gap-2 mt-2">
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">PHP</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">JavaScript</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">MySQL</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">PHP</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">JavaScript</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">MySQL</span>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Experiência 5 - NTM -->
-                    <div class="bg-white dark:bg-dark rounded-md shadow-lg p-6 border border-gray-200 dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
+                    <div class="bg-light-card dark:bg-dark rounded-md shadow-lg p-6 border border-light-border dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-semibold font-cinzel text-primary dark:text-secondary">Estagiário</h3>
                             <span class="bg-primary/10 dark:bg-secondary/10 text-primary dark:text-secondary text-base font-medium py-1 px-3 rounded-md border border-primary/20 dark:border-secondary/20 font-cinzel">Out. 2023 - Mar. 2024</span>
@@ -310,9 +319,9 @@
                         <div>
                             <span class="text-sm font-medium text-gray-500 dark:text-gray-400">Tecnologias:</span>
                             <div class="flex flex-wrap gap-2 mt-2">
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">PHP</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">MySQL</span>
-                                <span class="px-3 py-1 bg-gray-100 dark:bg-dark/80 border border-gray-200 dark:border-secondary/20 rounded-md text-sm">HTML/CSS</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">PHP</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">MySQL</span>
+                                <span class="px-3 py-1 bg-light-accent dark:bg-dark/80 border border-light-border dark:border-secondary/20 rounded-md text-sm">HTML/CSS</span>
                             </div>
                         </div>
                     </div>
@@ -321,12 +330,12 @@
         </section>
 
         <!-- Seção Formação -->
-        <section id="formacao" class="py-20 bg-gray-50 dark:bg-dark/90">
+        <section id="formacao" class="py-20 bg-light-pattern dark:bg-dark/90">
             <div class="container mx-auto px-4 sm:px-6">
                 <h2 class="text-3xl font-bold mb-12 text-center font-cinzel text-primary dark:text-secondary">Formação Acadêmica</h2>
                 
                 <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white dark:bg-dark rounded-md shadow-lg p-6 border border-gray-200 dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
+                    <div class="bg-light-card dark:bg-dark rounded-md shadow-lg p-6 border border-light-border dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
                         <div class="flex items-center mb-6">
                             <div class="w-12 h-12 bg-primary/10 dark:bg-secondary/10 rounded-md border border-primary/20 dark:border-secondary/20 flex items-center justify-center mr-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary dark:text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -346,7 +355,7 @@
                         </p>
                     </div>
                     
-                    <div class="bg-white dark:bg-dark rounded-md shadow-lg p-6 border border-gray-200 dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
+                    <div class="bg-light-card dark:bg-dark rounded-md shadow-lg p-6 border border-light-border dark:border-secondary/30 hover:border-primary dark:hover:border-secondary transition medieval-card">
                         <div class="flex items-center mb-6">
                             <div class="w-12 h-12 bg-primary/10 dark:bg-secondary/10 rounded-md border border-primary/20 dark:border-secondary/20 flex items-center justify-center mr-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary dark:text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -477,7 +486,7 @@
         </section>
 
         <!-- Seção Projetos -->
-        <section id="projetos" class="py-20 bg-white dark:bg-dark">
+        <section id="projetos" class="py-20 bg-light-bg dark:bg-dark">
             <div class="container mx-auto px-4 sm:px-6">
                 <h2 class="text-3xl font-bold mb-4 text-center font-cinzel text-primary dark:text-secondary">Projetos em Destaque</h2>
                 <p class="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -486,35 +495,35 @@
                 
                 <!-- Calculadora GDU Project -->
                 <div class="mb-16">
-                    <h3 class="text-2xl font-bold mb-6 font-cinzel text-primary dark:text-secondary border-b border-primary/30 dark:border-secondary/30 pb-2">Calculadora GDU Web</h3>
-                    <div class="bg-white dark:bg-dark/80 rounded-md shadow-lg overflow-hidden border border-gray-200 dark:border-secondary/30 p-6 medieval-card">
-                        <h4 class="text-xl font-semibold mb-2 font-cinzel text-primary dark:text-secondary">Calculadora de GDU Web</h4>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 font-cinzel text-primary dark:text-secondary border-b border-primary/30 dark:border-secondary/30 pb-2">Calculadora GDU Web</h3>
+                    <div class="bg-light-card dark:bg-dark/80 rounded-md shadow-lg overflow-hidden border border-light-border dark:border-secondary/30 p-4 sm:p-6 medieval-card">
+                        <h4 class="text-lg sm:text-xl font-semibold mb-2 font-cinzel text-primary dark:text-secondary">Calculadora de GDU Web</h4>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm sm:text-base">
                             Ferramenta web para upload de planilhas Excel, limpeza automática de dados, cálculo de Graus-Dia de Desenvolvimento (GDU) e exportação de resultados em diferentes formatos.
                         </p>
                         <div class="mb-4">
-                            <p class="text-gray-700 dark:text-gray-300 mb-2"><span class="font-semibold">Problema:</span> Cálculos manuais de GDU levavam horas e estavam sujeitos a erros humanos.</p>
-                            <p class="text-gray-700 dark:text-gray-300 mb-2"><span class="font-semibold">Solução:</span> Interface intuitiva com validação em tempo real e processamento automatizado.</p>
-                            <p class="text-gray-700 dark:text-gray-300"><span class="font-semibold">Impacto:</span> Redução de 80% no tempo de processamento e eliminação de erros de cálculo.</p>
+                            <p class="text-gray-700 dark:text-gray-300 mb-2 text-sm sm:text-base"><span class="font-semibold">Problema:</span> Cálculos manuais de GDU levavam horas e estavam sujeitos a erros humanos.</p>
+                            <p class="text-gray-700 dark:text-gray-300 mb-2 text-sm sm:text-base"><span class="font-semibold">Solução:</span> Interface intuitiva com validação em tempo real e processamento automatizado.</p>
+                            <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base"><span class="font-semibold">Impacto:</span> Redução de 80% no tempo de processamento e eliminação de erros de cálculo.</p>
                         </div>
                         <div class="mb-4">
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">Vue.js 3</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">Excel.js</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">Chart.js</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">Node.js</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">Tailwind CSS</span>
+                            <div class="flex flex-wrap gap-1 sm:gap-2 mb-4">
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">Vue.js 3</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">Excel.js</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">Chart.js</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">Node.js</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">Tailwind</span>
                             </div>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#" class="px-4 py-2 bg-primary dark:bg-transparent text-white dark:text-secondary border border-primary dark:border-secondary rounded-md hover:bg-primary/90 dark:hover:bg-secondary/10 transition flex items-center gap-2 text-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <a href="#" class="px-3 sm:px-4 py-2 bg-primary dark:bg-transparent text-white dark:text-secondary border border-primary dark:border-secondary rounded-md hover:bg-primary/90 dark:hover:bg-secondary/10 transition flex items-center gap-1 sm:gap-2 text-xs sm:text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                 </svg>
                                 Demo
                             </a>
-                            <a href="#" class="px-4 py-2 border border-gray-300 dark:border-secondary/30 rounded-md hover:bg-gray-100 dark:hover:bg-secondary/10 dark:text-gray-300 transition flex items-center gap-2 text-sm">
-                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <a href="#" class="px-3 sm:px-4 py-2 border border-gray-300 dark:border-secondary/30 rounded-md hover:bg-gray-100 dark:hover:bg-secondary/10 dark:text-gray-300 transition flex items-center gap-1 sm:gap-2 text-xs sm:text-sm">
+                                <svg class="h-3 w-3 sm:h-4 sm:w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                                 </svg>
                                 GitHub
@@ -525,35 +534,35 @@
                 
                 <!-- Dashboards Section -->
                 <div class="mb-16">
-                    <h3 class="text-2xl font-bold mb-6 font-cinzel text-primary dark:text-secondary border-b border-primary/30 dark:border-secondary/30 pb-2">Dashboards Analíticos</h3>
-                    <div class="bg-white dark:bg-dark/80 rounded-md shadow-lg overflow-hidden border border-gray-200 dark:border-secondary/30 p-6 medieval-card">
-                        <h4 class="text-xl font-semibold mb-2 font-cinzel text-primary dark:text-secondary">Dashboards Agrícolas</h4>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 font-cinzel text-primary dark:text-secondary border-b border-primary/30 dark:border-secondary/30 pb-2">Dashboards Analíticos</h3>
+                    <div class="bg-light-card dark:bg-dark/80 rounded-md shadow-lg overflow-hidden border border-light-border dark:border-secondary/30 p-4 sm:p-6 medieval-card">
+                        <h4 class="text-lg sm:text-xl font-semibold mb-2 font-cinzel text-primary dark:text-secondary">Dashboards Agrícolas</h4>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm sm:text-base">
                             Conjunto de painéis analíticos em Power BI para monitoramento de indicadores-chave de produção agrícola, com visualizações específicas por fase e rotação automática.
                         </p>
                         <div class="mb-4">
-                            <p class="text-gray-700 dark:text-gray-300 mb-2"><span class="font-semibold">Problema:</span> Dados dispersos em sistemas isolados dificultavam a tomada de decisão.</p>
-                            <p class="text-gray-700 dark:text-gray-300 mb-2"><span class="font-semibold">Solução:</span> Centralização de dados com visualizações customizadas para diferentes públicos e níveis hierárquicos.</p>
-                            <p class="text-gray-700 dark:text-gray-300"><span class="font-semibold">Impacto:</span> Redução de 35% no tempo de análise e identificação precoce de tendências negativas.</p>
+                            <p class="text-gray-700 dark:text-gray-300 mb-2 text-sm sm:text-base"><span class="font-semibold">Problema:</span> Dados dispersos em sistemas isolados dificultavam a tomada de decisão.</p>
+                            <p class="text-gray-700 dark:text-gray-300 mb-2 text-sm sm:text-base"><span class="font-semibold">Solução:</span> Centralização de dados com visualizações customizadas para diferentes públicos e níveis hierárquicos.</p>
+                            <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base"><span class="font-semibold">Impacto:</span> Redução de 35% no tempo de análise e identificação precoce de tendências negativas.</p>
                         </div>
                         <div class="mb-4">
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">Power BI</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">DAX</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">Power Query</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">SQL</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">Excel Avançado</span>
+                            <div class="flex flex-wrap gap-1 sm:gap-2 mb-4">
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">Power BI</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">DAX</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">Power Query</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">SQL</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">Excel</span>
                             </div>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#" class="px-4 py-2 bg-primary dark:bg-transparent text-white dark:text-secondary border border-primary dark:border-secondary rounded-md hover:bg-primary/90 dark:hover:bg-secondary/10 transition flex items-center gap-2 text-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <a href="#" class="px-3 sm:px-4 py-2 bg-primary dark:bg-transparent text-white dark:text-secondary border border-primary dark:border-secondary rounded-md hover:bg-primary/90 dark:hover:bg-secondary/10 transition flex items-center gap-1 sm:gap-2 text-xs sm:text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                 </svg>
                                 Demo
                             </a>
-                            <a href="#" class="px-4 py-2 border border-gray-300 dark:border-secondary/30 rounded-md hover:bg-gray-100 dark:hover:bg-secondary/10 dark:text-gray-300 transition flex items-center gap-2 text-sm">
-                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <a href="#" class="px-3 sm:px-4 py-2 border border-gray-300 dark:border-secondary/30 rounded-md hover:bg-gray-100 dark:hover:bg-secondary/10 dark:text-gray-300 transition flex items-center gap-1 sm:gap-2 text-xs sm:text-sm">
+                                <svg class="h-3 w-3 sm:h-4 sm:w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                                 </svg>
                                 GitHub
@@ -564,41 +573,41 @@
                 
                 <!-- SAAS Project -->
                 <div class="mb-8">
-                    <h3 class="text-2xl font-bold mb-6 font-cinzel text-primary dark:text-secondary border-b border-primary/30 dark:border-secondary/30 pb-2">Sistema SAAS (Colaboração)</h3>
-                    <div class="bg-white dark:bg-dark/80 rounded-md shadow-lg overflow-hidden border border-gray-200 dark:border-secondary/30 p-6 medieval-card">
-                        <h4 class="text-xl font-semibold mb-2 font-cinzel text-primary dark:text-secondary">Sistema de Gestão Empresarial SAAS</h4>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 font-cinzel text-primary dark:text-secondary border-b border-primary/30 dark:border-secondary/30 pb-2">Sistema SAAS (Colaboração)</h3>
+                    <div class="bg-light-card dark:bg-dark/80 rounded-md shadow-lg overflow-hidden border border-light-border dark:border-secondary/30 p-4 sm:p-6 medieval-card">
+                        <h4 class="text-lg sm:text-xl font-semibold mb-2 font-cinzel text-primary dark:text-secondary">Sistema de Gestão Empresarial SAAS</h4>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm sm:text-base">
                             Plataforma SAAS para gestão empresarial completa desenvolvida em colaboração. O sistema oferece módulos de controle financeiro, gestão de clientes e análise de dados em tempo real.
                         </p>
                         <div class="mb-4">
-                            <p class="text-gray-700 dark:text-gray-300 mb-2"><span class="font-semibold">Problema:</span> Empresas de pequeno porte sem acesso a ferramentas de gestão integradas por custo elevado.</p>
-                            <p class="text-gray-700 dark:text-gray-300 mb-2"><span class="font-semibold">Solução:</span> Sistema modular baseado em assinatura com implementação simplificada e suporte contínuo.</p>
-                            <p class="text-gray-700 dark:text-gray-300"><span class="font-semibold">Impacto:</span> Democratização do acesso a ferramentas de gestão empresarial para pequenas empresas.</p>
+                            <p class="text-gray-700 dark:text-gray-300 mb-2 text-sm sm:text-base"><span class="font-semibold">Problema:</span> Empresas de pequeno porte sem acesso a ferramentas de gestão integradas por custo elevado.</p>
+                            <p class="text-gray-700 dark:text-gray-300 mb-2 text-sm sm:text-base"><span class="font-semibold">Solução:</span> Sistema modular baseado em assinatura com implementação simplificada e suporte contínuo.</p>
+                            <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base"><span class="font-semibold">Impacto:</span> Democratização do acesso a ferramentas de gestão empresarial para pequenas empresas.</p>
                         </div>
                         <div class="mb-4">
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">React</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">Node.js</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">MongoDB</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">Docker</span>
-                                <span class="px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-sm">AWS</span>
+                            <div class="flex flex-wrap gap-1 sm:gap-2 mb-4">
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">React</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">Node.js</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">MongoDB</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">Docker</span>
+                                <span class="px-2 sm:px-3 py-1 bg-primary/10 dark:bg-dark/80 border border-primary/20 dark:border-secondary/20 text-primary dark:text-secondary rounded-md text-xs sm:text-sm">AWS</span>
                             </div>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#" class="px-4 py-2 bg-primary dark:bg-transparent text-white dark:text-secondary border border-primary dark:border-secondary rounded-md hover:bg-primary/90 dark:hover:bg-secondary/10 transition flex items-center gap-2 text-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <a href="#" class="px-3 sm:px-4 py-2 bg-primary dark:bg-transparent text-white dark:text-secondary border border-primary dark:border-secondary rounded-md hover:bg-primary/90 dark:hover:bg-secondary/10 transition flex items-center gap-1 sm:gap-2 text-xs sm:text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                 </svg>
                                 Demo
                             </a>
-                            <a href="#" class="px-4 py-2 border border-gray-300 dark:border-secondary/30 rounded-md hover:bg-gray-100 dark:hover:bg-secondary/10 dark:text-gray-300 transition flex items-center gap-2 text-sm">
-                                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <a href="#" class="px-3 sm:px-4 py-2 border border-gray-300 dark:border-secondary/30 rounded-md hover:bg-gray-100 dark:hover:bg-secondary/10 dark:text-gray-300 transition flex items-center gap-1 sm:gap-2 text-xs sm:text-sm">
+                                <svg class="h-3 w-3 sm:h-4 sm:w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                                 </svg>
                                 GitHub
                             </a>
                         </div>
-                        <p class="mt-4 text-sm text-gray-500 dark:text-gray-400 italic">* Projeto desenvolvido em colaboração, com permissão para exibição no portfólio.</p>
+                        <p class="mt-4 text-xs sm:text-sm text-gray-500 dark:text-gray-400 italic">* Projeto desenvolvido em colaboração, com permissão para exibição no portfólio.</p>
                     </div>
                 </div>
             </div>
@@ -612,8 +621,8 @@
         <div class="container mx-auto px-4 sm:px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <p class="text-lg font-semibold font-cinzel text-primary dark:text-secondary">Rodrigo Martins</p>
-                    <p class="text-gray-400">Desenvolvedor de Sistemas | JavaScript</p>
+                    <p class="text-lg font-semibold font-cinzel text-primary dark:text-secondary">Rodrigo Bertipalha</p>
+                    <p class="text-gray-400">Analista de Dados</p>
                     <p class="text-gray-400 mt-1">Petrolina, Pernambuco, Brasil</p>
                 </div>
                 <div class="flex space-x-4">
@@ -635,7 +644,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2025 Rodrigo Martins. Todos os direitos reservados.</p>
+                <p class="text-gray-400">&copy; 2025 Rodrigo Bertipalha. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>

@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Rastrear cliques no botão de CV
-        const cvButton = document.querySelector('a[href$="CV_Rodrigo_Martins.pdf"]');
+        const cvButton = document.querySelector('a[href$="CV_Rodrigo_Bertipalha.pdf"]');
         if (cvButton) {
             cvButton.addEventListener('click', function() {
                 // TODO: Integrar com Plausible ou outra ferramenta de analytics
